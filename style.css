@@ -1,0 +1,138 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.h1carrinho {
+  display: flex;
+  justify-content: space-around;
+}
+
+header {
+  background-image: url(img/pexels-dominika-roseclay-1982485.jpg);
+  
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+} 
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.menu2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.item {
+  width: 300px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+}
+
+.item:hover {
+  transform: translatey(-3px);
+  transition: 0.5s all;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.item h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.item p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.item span {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+.item button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.item button:hover {
+  background-color: #555;
+}
+
+#cart {
+  display: none;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+#cart h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+#cart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#cart li {
+  margin-bottom: 10px;
+}
+
+#cart li span {
+  font-weight: bold;
+}
+
+#cart-total {
+  font-weight: bold;
+}
+
+#cart-btn {
+  display: block;
+  margin-top: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#cart-btn:hover {
+  background-color: #555;
+  transform: translatey(-3px);
+  transition: 0.5s all;
+}
