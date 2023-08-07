@@ -8,18 +8,21 @@
 </head>
 </head>
 <body>
+
   <div class="h1carrinho">
     <h1>Nome da sorveteria</h1>
     <button id="cart-btn" onclick="toggleCart()">Carrinho</button>
   </div>
 
-  
+
+
   <div id="cart">
     <h2>Carrinho</h2>
     <ul id="cart-items"></ul>
     <p>Total: R$<span id="cart-total">0</span></p>
     <button onclick="clearCart()">Limpar Carrinho</button>
   </div>
+  
   
   <div class="menu">
     <div class="item">
@@ -45,11 +48,9 @@
       <span>R$8,00</span>
       <button onclick="addToCart('Doce 2', 8)">Adicionar ao Carrinho</button>
     </div>
-
   </div>
 
   <div class="menu2">
-
     <div class="item">
       <img src="img/pexels-katya-wolf-8734293.jpg" alt="Imagem 2">
       <h2>Doce 2</h2>
@@ -73,55 +74,10 @@
       <span>R$8,00</span>
       <button onclick="addToCart('Doce 2', 8)">Adicionar ao Carrinho</button>
     </div>
-
   </div>
     
     <!-- Adicione mais itens de cardápio aqui -->
-    
-  
-
-  <script>
-    const cartItemsElement = document.getElementById("cart-items");
-    const cartTotalElement = document.getElementById("cart-total");
-    const cartElement = document.getElementById("cart");
-    let cartTotal = 0;
-    let cartVisible = false;
-
-    function addToCart(itemName, itemPrice) {
-      const item = document.createElement("li");
-      item.innerHTML = `
-        <span>${itemName}</span>
-        <span>R$${itemPrice}</span>
-        <button onclick="removeFromCart(this, ${itemPrice})">Remover</button>
-      `;
-      cartItemsElement.appendChild(item);
-
-      cartTotal += itemPrice;
-      cartTotalElement.textContent = cartTotal;
-    }
-
-    function removeFromCart(itemElement, itemPrice) {
-      const liElement = itemElement.parentElement;
-      cartItemsElement.removeChild(liElement);
-
-      cartTotal -= itemPrice;
-      cartTotalElement.textContent = cartTotal;
-    }
-
-    function clearCart() {
-      cartItemsElement.innerHTML = "";
-      cartTotal = 0;
-      cartTotalElement.textContent = cartTotal;
-    }
-
-    function toggleCart() {
-      cartVisible = !cartVisible;
-      if (cartVisible) {
-        cartElement.style.display = "block";
-      } else {
-        cartElement.style.display = "none";
-      }
-    }
-  </script>
+   
+  <script src="script.js"></script>
 </body>
 </html>

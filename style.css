@@ -1,25 +1,84 @@
-body {
+* {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+
 }
 
 .h1carrinho {
+  margin: 15px;
   display: flex;
   justify-content: space-around;
-}
-
-header {
-  background-image: url(img/pexels-dominika-roseclay-1982485.jpg);
-  
 }
 
 h1 {
   text-align: center;
   color: #333;
 } 
+
+#cart-btn {
+  display: block;
+  background-color: #333;
+  padding: 13px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#cart-btn:hover {
+  background-color: #555;
+  transform: translatey(-1px);
+  transition: 0.5s all;
+}
+
+
+#cart {
+  display: none;
+  border: 2px solid #333;
+  border-radius: 5px;
+
+  padding: 10px;
+  margin-top: 20px;
+}
+
+#cart p {
+  margin-top: 10px;
+}
+
+#cart h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+#cart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#cart li {
+  margin-bottom: 10px;
+}
+
+#cart li span {
+  font-weight: bold;
+}
+
+#cart button {
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#cart button:hover {
+  background-color: #e0f7f6;
+}
+
+#cart-total {
+  font-weight: bold;
+}
 
 .menu {
   display: flex;
@@ -89,50 +148,3 @@ h1 {
   background-color: #555;
 }
 
-#cart {
-  display: none;
-  border: 1px solid #333;
-  border-radius: 5px;
-  background-color: #fff;
-  padding: 5px;
-  margin-top: 20px;
-}
-
-#cart h2 {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 5px;
-}
-
-#cart ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-#cart li {
-  margin-bottom: 10px;
-}
-
-#cart li span {
-  font-weight: bold;
-}
-
-#cart-total {
-  font-weight: bold;
-}
-
-#cart-btn {
-  display: block;
-  margin-top: 10px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#cart-btn:hover {
-  background-color: #555;
-  transform: translatey(-3px);
-  transition: 0.5s all;
-}
